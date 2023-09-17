@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. feladat</title>
+    <script>
+
+        function writeText() {
+
+            document.getElementById("myParagraph2").innerHTML = myText.value;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <p id="myParagraph2">
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem architecto adipisci eos ab perferendis modi earum
+        pariatur dicta deleniti sapiente, impedit voluptates ut dolorem laboriosam placeat quam sed nobis. Illo.
+    </p>
+
+    <input id="myText" oninput="writeText()" type="text" value="Ide írj">
+
+</body>
+
+</html>
