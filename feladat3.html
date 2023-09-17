@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. feladat</title>
+    <script>
+
+        function imgClick() {
+
+            document.getElementById("myParagraph").innerHTML = "Rákattintott";
+
+        }
+
+        function imgLoad() {
+
+            document.getElementById("myParagraph").innerHTML = "Betöltődött";
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <main>
+        <p id="myParagraph">Betöltés</p>
+
+        <img img onclick="imgClick()" onload="imgLoad()" src="./images (1).jfif" alt="">
+    </main>
+    
+</body>
+</html>
