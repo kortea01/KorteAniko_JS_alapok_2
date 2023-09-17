@@ -7,10 +7,21 @@
 </head>
 <body>
     <main>
-        <button onmouseover="console.log('Húzd ide az egeret!')">Húzd ide az egeret!</button>
+        <button id="gomb" onmouseover="console.log('Húzd ide az egeret!')">Húzd ide az egeret!</button>
         
 
     </main>
-    
+    <script>
+        const btn = document.getElementById("gomb");
+
+        btn.addEventListener("mouseover", ()=>{
+
+        if(btn.innerText === "Húzd ide az egeret!"){
+        btn.innerText = "Sikerült";
+        }else{
+        btn.innerText= "Húzd ide az egeret!";
+    }
+});
+    </script>
 </body>
 </html>
